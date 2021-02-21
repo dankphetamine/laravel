@@ -17,8 +17,8 @@ class CreateProductsTable extends Migration
             $table->id();
             $table->string('name');
             $table->string('description');
-            $table->integer('stock');
-            $table->unsignedDecimal('price', $precision = 9, $digits = 2);
+            $table->integer('stock')->default(1);
+            $table->unsignedDecimal('price', $precision = 9, $digits = 2)->default(999.99);
             $table->timestamps();
         });
     }
