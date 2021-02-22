@@ -4,11 +4,11 @@
 
 <div class="row">
   <div class="col">
-     <div class="pull-left">
-      <a class="btn btn-outline-secondary" href="{{route('products.index')}}">Go back</a>
+      <div class="float-left">
+        <a class="btn btn-outline-secondary" href="{{route('products.index')}}">Go back</a>
     </div>
 
-    <div class="pull-right">
+    <div class="float-right">
       <h1>Add Product</h1>
     </div>
 
