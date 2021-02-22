@@ -19,11 +19,11 @@
   @csrf
 <div class="form-group">
     <label for="name">Name</label>
-    <input type="text" class="form-control" id="name" placeholder="Enter name">
+    <input type="text" class="form-control" id="name" name="name" placeholder="Enter name">
   </div>
   <div class="form-group">
-    <label for="description">Password</label>
-    <input type="text" class="form-control" id="description" placeholder="Enter description">
+    <label for="description">Description</label>
+    <input type="text" class="form-control" id="description" name="description" placeholder="Enter description">
   </div>
   <button type="submit" class="btn btn-primary btn-lg">Submit</button>
 </form>
