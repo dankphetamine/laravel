@@ -15,8 +15,10 @@
   </div>
 </div>
 
-<form action="{{route('products.store')}}" method="POST">
+<form action="{{route('products.update', $product->id)}}" method="POST">
   @csrf
+  @method('put')
+
 <div class="form-group">
     <label for="name">Name</label>
     <input type="text" class="form-control" id="name" name="name" placeholder="Enter name" value="{{$product->name}}">
@@ -33,7 +35,7 @@
     <label for="description">Price</label>
     <input type="text" class="form-control" id="price" name="price" placeholder="Enter price" value="{{$product->price}}">
   </div>
-  <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+  <button type="submit" class="btn btn-primary btn-lg">Update</button>
 </form>
 
 @if ($errors->any())
