@@ -25,7 +25,7 @@
     <label for="description">Description</label>
     <input type="text" class="form-control" id="description" name="description" placeholder="Enter description">
   </div>
-  <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+  <button type="submit" class="btn btn-success btn-lg">Add</button>
 </form>
 
 @if ($errors->any())
